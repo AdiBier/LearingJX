@@ -1,4 +1,3 @@
 # LearningJX
 
-#1. Install SceneBuilder
-#2. 
+1. Install Scene Builder
