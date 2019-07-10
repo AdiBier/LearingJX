@@ -40,7 +40,6 @@ public class HomeStageController implements Initializable {
         Scene loginStageScene = new Scene(loginStageParent);
 
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
-
         window.setScene(loginStageScene);
         window.show();
     }
