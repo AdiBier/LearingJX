@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="785.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="785.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginStageController">
    <top>
       <AnchorPane prefHeight="105.0" prefWidth="1021.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
          <children>
@@ -53,9 +53,9 @@
       </AnchorPane>
    </bottom>
    <center>
-      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+      <Pane prefHeight="575.0" prefWidth="766.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="379.0" layoutY="363.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="214.0" text="Zaloguj" />
+            <Button fx:id="buttonLogin" layoutX="379.0" layoutY="363.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="214.0" style="-fx-background-color: #1E90FF;" text="Zaloguj" />
             <Label layoutX="308.0" layoutY="246.0" text="Hasło">
                <font>
                   <Font size="21.0" />
@@ -66,17 +66,28 @@
                   <Font size="21.0" />
                </font>
             </Label>
-            <PasswordField layoutX="381.0" layoutY="248.0" prefHeight="25.0" prefWidth="210.0" promptText="wpisz hasło" style="-fx-background-color: white;" />
-            <TextField layoutX="381.0" layoutY="192.0" prefHeight="25.0" prefWidth="210.0" promptText="wpisz email" style="-fx-background-color: white;" />
+            <PasswordField layoutX="381.0" layoutY="248.0" prefHeight="25.0" prefWidth="210.0" promptText="wpisz hasło" style="-fx-background-color: white; -fx-border-color: black;" />
+            <TextField layoutX="381.0" layoutY="192.0" prefHeight="25.0" prefWidth="210.0" promptText="wpisz email" style="-fx-background-color: white; -fx-border-color: black;" />
             <Text fill="#0f0fffde" layoutX="454.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zapomniałeś hasła?" wrappingWidth="146.30988311767578">
                <font>
                   <Font size="16.0" />
                </font>
             </Text>
+            <Label layoutX="43.0" layoutY="372.0" text="Powrót" />
          </children>
          <BorderPane.margin>
             <Insets />
          </BorderPane.margin>
       </Pane>
    </center>
+   <left>
+      <Pane prefHeight="575.0" prefWidth="41.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonArrow" layoutX="14.0" layoutY="365.0" mnemonicParsing="false" style="-fx-background-color: #1E90FF;" text="Arrow" />
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Pane prefHeight="575.0" prefWidth="131.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER" />
+   </right>
 </BorderPane>
