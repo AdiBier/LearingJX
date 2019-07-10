@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXHamburger?>
-<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="846.0" prefWidth="1021.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="846.0" prefWidth="1021.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
    <top>
-      <AnchorPane prefHeight="105.0" prefWidth="1021.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="105.0" prefWidth="1021.0" scaleShape="false" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="41.0" fitWidth="126.0" layoutX="438.0" layoutY="23.0" opacity="0.89" pickOnBounds="true" preserveRatio="true" scaleX="8.0" scaleY="2.0" scaleZ="3.0" x="10.0" y="10.0">
+               <image>
+                  <Image url="@../../../../Praca/Reklama/1.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#b90b0b" layoutX="419.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Miejsce na twoja reklame" textAlignment="CENTER" wrappingWidth="183.34765625">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
    </top>
    <bottom>
       <AnchorPane prefHeight="105.0" prefWidth="1021.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER" />
    </bottom>
-   <right>
-      <JFXHamburger alignment="TOP_CENTER" cache="true" prefHeight="636.0" prefWidth="100.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
-         <cursor>
-            <Cursor fx:constant="NONE" />
-         </cursor>
-      </JFXHamburger>
-   </right>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXHamburger fx:id="ham1" alignment="TOP_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="42.0" stylesheets="@style/style.css" />
+         </children>
+      </Pane>
+   </center>
 </BorderPane>
