@@ -9,7 +9,7 @@ import javafx.scene.input.MouseEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class HomeStageController implements Initializable {
 
     @FXML
     private JFXHamburger ham1;
@@ -22,5 +22,7 @@ public class Controller implements Initializable {
             basicClose.setRate(basicClose.getRate()*-1);
             basicClose.play();
         });
+
+
     }
 }
