@@ -27,17 +27,22 @@ public class BuyMilkStageController implements Initializable, ThreeClickButtonSe
 
     @Override
     public void changeScreenButtonPushed(ActionEvent event) throws IOException {
-        Parent buyMilkStageParent = FXMLLoader.load(getClass().getResource("/BuyMilkStage.fxml"));
-        Scene buyMilkStageScene = new Scene(buyMilkStageParent);
+        Parent menuStageParent = FXMLLoader.load(getClass().getResource("/AlertStage.fxml"));
+        Scene menuStageScene = new Scene(menuStageParent);
 
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        window.setScene(buyMilkStageScene);
+        window.setScene(menuStageScene);
         window.show();
     }
 
     @Override
     public void changeScreenButtonPushed2(ActionEvent event) throws IOException {
+        Parent menuStageParent = FXMLLoader.load(getClass().getResource("/MenuStage.fxml"));
+        Scene menuStageScene = new Scene(menuStageParent);
 
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        window.setScene(menuStageScene);
+        window.show();
     }
 
     @Override
