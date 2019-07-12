@@ -11,13 +11,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import service.ButtonService;
+import service.TwoClickButtonService;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginStageController implements Initializable, ButtonService {
+public class LoginStageController implements Initializable, TwoClickButtonService {
 
     @FXML
     private Button buttonLogin;
@@ -60,5 +60,10 @@ public class LoginStageController implements Initializable, ButtonService {
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
         window.setScene(homeStageScene);
         window.show();
+    }
+
+    @Override
+    public void changeScreenButtonPushed2(ActionEvent event) throws IOException {
+
     }
 }

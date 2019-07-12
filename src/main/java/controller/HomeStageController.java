@@ -12,13 +12,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import service.ButtonService;
+import service.OneClickButtonService;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class HomeStageController implements Initializable, ButtonService {
+public class HomeStageController implements Initializable, OneClickButtonService {
 
     @FXML
     private JFXHamburger ham1;
@@ -38,11 +38,12 @@ public class HomeStageController implements Initializable, ButtonService {
     }
     @Override
     public void changeScreenButtonPushed(ActionEvent event) throws IOException {
-        Parent loginStageParent = FXMLLoader.load(getClass().getResource("/LoginStage.fxml"));
-        Scene loginStageScene = new Scene(loginStageParent);
+        Parent menuStageParent = FXMLLoader.load(getClass().getResource("/MenuStage.fxml"));
+        Scene menuStageScene = new Scene(menuStageParent);
 
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        window.setScene(loginStageScene);
+        window.setScene(menuStageScene);
         window.show();
     }
+
 }
